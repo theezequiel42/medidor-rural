@@ -1,0 +1,15 @@
+### Listar todos os usuários
+GET http://localhost:3000/api/usuarios
+Content-Type: application/json
+
+###
+
+### Criar novo usuário
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "telefone": "47999990000",
+  "papel": "MORADOR"
+}

@@ -1,0 +1,47 @@
+#  DEPENDÊNCIAS
+node_modules/
+.expo/
+dist/
+web-build/
+.expo-shared/
+
+#  NEXT.JS
+.next/
+out/
+
+#  PRISMA & DATABASE
+*.db
+*.sqlite
+*.env
+prisma/dev.db
+
+#  CREDENCIAIS & CERTIFICADOS
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+#  DEBUG & LOGS
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+#  SISTEMA (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+#  TYPESCRIPT
+*.tsbuildinfo
+
+#  AMBIENTES LOCAIS
+.env*.local
+
+#  ARQUIVOS TEMPORÁRIOS
+*.orig.*
+*.log
+app-example
+
+#  VS CODE
+.vscode/
