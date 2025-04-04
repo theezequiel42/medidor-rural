@@ -8,15 +8,27 @@ datasource db {
 }
 
 model Usuario {
-  id        String   @id @default(uuid())
+  id        String    @id @default(uuid())
   nome      String
-  telefone  String   @unique
+  telefone  String    @unique
   papel     Papel
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
+
+  leituras  Leitura[]  
 }
 
 enum Papel {
   MORADOR
   COLETOR
   ADMIN
+}
+
+model Leitura {
+  id         String   @id @default(uuid())
+  valorM3    Int        
+  data       DateTime   @default(now())
+  moradorId  String
+  morador    Usuario    @relation(fields: [moradorId], references: [id])
+
+  createdAt  DateTime   @default(now())
 }

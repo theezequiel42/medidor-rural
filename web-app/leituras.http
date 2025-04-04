@@ -1,0 +1,14 @@
+### Listar todas as leituras
+GET http://localhost:3000/api/leituras
+Content-Type: application/json
+
+###
+
+### Criar nova leitura
+POST http://localhost:3000/api/leituras
+Content-Type: application/json
+
+{
+  "valorM3": 15.5,
+  "moradorId": "COLE_AQUI_O_ID_DE_UM_MORADOR_EXISTENTE"
+}
