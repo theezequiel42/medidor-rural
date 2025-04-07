@@ -10,6 +10,7 @@ web-build/
 
 # prisma e db
 .env
+.env.local
 *.db
 *.sqlite
 prisma/dev.db
