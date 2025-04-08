@@ -9,12 +9,12 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node", // <- trocado de 'bundler' pra 'node'
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",             // <- garante suporte ao alias @/
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
